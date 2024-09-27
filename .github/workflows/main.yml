@@ -2,7 +2,7 @@ on:
   push: 
      pull_request:
 jobs:
-  build:
+   build:
     name: Build
     runs-on: ubuntu-latest
     steps:
@@ -10,14 +10,14 @@ jobs:
         run: npm install
       - name: Build 
         run: npm run build
-  steps:
+steps:
        - name: Check out code
          uses: actions/checkout@v4
        - name: List directory contents
          run: ls -la
        - name: Set up Node.js
          uses: actions/setup-node@v4
-   with:
+with:
         node-version: '20'
        - name: Install dependencies
          run: npm install
