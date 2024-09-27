@@ -12,7 +12,7 @@ jobs:
       - name: Build 
         run: npm run build
   steps:
-       - name: Check out code
+       - name: Checkout code
          uses: actions/checkout@v4
  
        - name: List directory contents
