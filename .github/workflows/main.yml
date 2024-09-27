@@ -1,6 +1,6 @@
 on: 
   push: 
-     pull_request:
+     pull_request: main
 jobs:
    build:
     name: Build
@@ -18,7 +18,7 @@ steps:
        - name: Set up Node.js
          uses: actions/setup-node@v4
 with:
-        node-version: '20'
+         node-version: '20'
        - name: Install dependencies
          run: npm install
          working-directory: ./
